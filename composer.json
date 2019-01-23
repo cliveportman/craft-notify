@@ -1,0 +1,43 @@
+{
+    "name": "portman/notify",
+    "description": "Send a notification from a template",
+    "type": "craft-plugin",
+    "version": "0.0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "notify"
+    ],
+    "support": {
+        "docs": "???",
+        "issues": "???"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Clive Portman",
+            "homepage": "https://clive.theportman.co"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "portman\\notify\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Notify",
+        "handle": "notify",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "???",
+        "components": {
+            "send": "portman\\notify\\services\\Send"
+        },
+        "class": "portman\\notify\\Notify"
+    }
+}
